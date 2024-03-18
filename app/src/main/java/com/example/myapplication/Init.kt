@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_CHANGED_VALUE")
+
 package com.example.myapplication
 
 fun main() {
@@ -20,10 +22,10 @@ fun main() {
 
     var arr = arrayOf(1,3,4,5,6,6,8,5,3, "hello")
 
-    for (i in 0..arr.size - 1){
+    /*for (i in 0..arr.size - 1){
     println("Index is $i and value is ${arr[i]}")
-    }
-    for (c in arr) {
+    }*/
+    /*for (c in arr) {
 //        println("Enter and element: ")
 //        val days = readln().toInt()
         when (c) {
@@ -40,8 +42,16 @@ fun main() {
 
     arr.forEach {
         println(it)
+    }*/
+
+    var mutarr = mutableListOf<Int>(1,2,3,5,3,5,2,5,10)
+    mutarr.add(12)
+
+
+    var i = 100
+    while (i > 0){
+        println(i)
+        i -= 2
     }
-
-
 }
 
