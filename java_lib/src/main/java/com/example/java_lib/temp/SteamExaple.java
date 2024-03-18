@@ -7,7 +7,7 @@ import java.util.stream.*;
 public class SteamExaple {
         public static void main(String args[])
         {
-            /*// create a list of integers
+            // create a list of integers
             List<Integer> number = Arrays.asList(2, 3, 4, 5);
 
             // demonstration of map method
@@ -59,7 +59,7 @@ public class SteamExaple {
                     .filter(x -> x % 2 == 0)
                     .reduce(0, (ans, i) -> ans + i);
 
-            System.out.println(even);*/
+            System.out.println(even);
 
             List<Integer> list = Arrays.asList(1,2,3,4,5,6,7);
 
@@ -68,6 +68,19 @@ public class SteamExaple {
                     .toList();
 
             System.out.println(squre);
+
+
+            Map map = new HashMap();
+
+            map.put("id", 1);
+            map.put("value", 2);
+            System.out.println(map);
+//            map.entrySet().stream()
+//                    .map(entry -> en + 1 )
+//                    .toList();
+//                    .forEach(System.out::println)
+
+
         }
 
 }
