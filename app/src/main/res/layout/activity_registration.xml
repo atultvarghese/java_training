@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <EditText
+        android:id="@+id/registerUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/registerUserName"
+        app:layout_constraintTop_toBottomOf="@+id/registerUserName" />
+
+
+    <CheckBox
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:text="Car"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCountryDropDown"
+        app:layout_constraintEnd_toStartOf="@+id/bike" />
+
+    <CheckBox
+        android:id="@+id/bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:text="Bike"
+        app:layout_constraintBaseline_toBaselineOf="@+id/car"
+        app:layout_constraintEnd_toEndOf="@+id/gender" />
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="77dp"
+        android:text="Gender"
+        app:layout_constraintEnd_toStartOf="@+id/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Assets"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCountryDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword">
+
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="89dp"
+            android:layout_height="35dp"
+            android:text="female" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerCountryDropDown"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
